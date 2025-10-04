@@ -1,0 +1,34 @@
+name: QBio
+version: 1.0.0
+main: com.MQianYan.qbio.QBioPlugin
+api-version: "1.21"
+authors: [MQianYan]
+description: 生物桶插件 - 捕捉和释放生物
+website: https://github.com/MQianYan
+
+commands:
+  bio:
+    description: 生物桶管理命令
+    usage: /<command> <give|rate|reload>
+    permission: qbio.admin
+
+permissions:
+  qbio.*:
+    description: 所有QBio权限
+    children:
+      qbio.give: true
+      qbio.rate: true
+      qbio.reload: true
+      qbio.use: true
+  qbio.give:
+    description: 给予生物桶权限
+    default: op
+  qbio.rate:
+    description: 修改概率权限
+    default: op
+  qbio.reload:
+    description: 重载配置权限
+    default: op
+  qbio.use:
+    description: 使用生物桶权限
+    default: true

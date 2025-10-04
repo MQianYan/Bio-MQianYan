@@ -1,0 +1,28 @@
+# QBio 插件配置
+
+# 设置选项
+settings:
+  # 抓取成功率 (0.0 - 1.0)
+  capture-chance: 0.8
+  # 冷却时间 (秒)
+  cooldown: 3
+  # 启用调试模式
+  debug: false
+
+# 禁止捕捉的生物列表
+banned-entities:
+  - ENDER_DRAGON
+  - WITHER
+  - PLAYER
+  - ARMOR_STAND
+  - ITEM_FRAME
+  - PAINTING
+
+# 物品设置
+item-settings:
+  # 在物品描述中显示捕获概率
+  show-capture-chance: true
+  # 启用粒子效果
+  enable-particles: true
+  # 启用声音效果
+  enable-sounds: true

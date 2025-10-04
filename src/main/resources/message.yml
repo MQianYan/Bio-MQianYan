@@ -1,0 +1,38 @@
+# QBio 消息配置
+
+# 插件消息
+plugin:
+  enable: "生物桶 插件已成功载入 by_Paang"
+  reload: "&a配置已重新加载!"
+
+# 捕获消息
+capture:
+  success: "&a成功捕获了 &e{entity}&a!"
+  failed: "&c捕获失败，请再试一次!"
+  empty-bucket: "&e这是一个空的生物桶，右键生物来捕获!"
+  banned-entity: "&c无法捕获这种生物!"
+  cooldown: "&c请等待 &e{time}&c 秒后再使用!"
+
+# 释放消息
+release:
+  success: "&a成功释放了 &e{entity}&a!"
+  failed: "&c释放生物失败!"
+
+# 错误消息
+error:
+  not-player: "&c只有玩家可以使用此命令!"
+  no-permission: "&c你没有权限使用此命令!"
+  invalid-entity: "&c生物桶数据损坏!"
+  player-offline: "&c玩家 &e{player}&c 不在线!"
+
+# 物品显示
+item:
+  empty-name: "&6生物桶"
+  filled-name: "&6生物桶 &7[&f{entity}&7]"
+  empty-lore:
+    - "&7右键生物以捕获"
+    - "&7概率: &e{chance}%"
+    - "&7冷却: &e{cooldown}秒"
+  filled-lore:
+    - "&7已捕获: &f{entity}"
+    - "&7右键空地以释放"
